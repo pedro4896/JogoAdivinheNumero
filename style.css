@@ -1,0 +1,122 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center; 
+  color: #F3F5FC;
+  background-color: #000;
+}
+
+@keyframes trocaBackground {
+  0%{
+    opacity: 0.50;
+  }
+  50%{
+    opacity: 0.75;
+  }
+  75%{
+    opacity: 0.90;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.animate-background{
+  animation: trocaBackground 1s 1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 220px;
+  width: 400px;
+  border-radius: 10px;
+  background: linear-gradient(rgba(30, 140, 153,0.9), transparent);
+  padding: 10px;
+  margin: 20px auto;
+}
+
+.descricao{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background: rgba(38, 38, 38, 0.7);
+  border-radius: 5px;
+  margin-bottom: 15px;
+  filter: drop-shadow(10px 10px 10px #000)
+}
+
+.componentes{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+
+.botoes{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.input{
+  width: 40%;
+  height: 100%;
+}
+
+h1{
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 5px;
+  font-size: 80px;
+  text-align: center;
+  margin-right: 10px;
+  border: 0;
+  border-radius: 5px;
+  width: 100%;
+  height: calc(100% - 10px);
+  outline: 0;
+  background: #F3F5FC;
+  filter: drop-shadow(10px 10px 10px #000)
+}
+
+button:nth-child(1){
+  margin-bottom: 20px;
+}
+
+button {
+  width: 100%;
+  padding: 5px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 0;
+  border-radius: 2px;
+  outline: 0;
+  cursor: pointer;
+  background-color: #F3F5FC;
+  filter: drop-shadow(10px 10px 10px #000)
+}
+
+p {
+  font-size: 18px;
+}
+
+#mensagem{
+  margin-top: 10px;
+}
